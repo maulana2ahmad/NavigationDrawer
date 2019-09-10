@@ -100,3 +100,15 @@ gambar 2
             super.onBackPressed();
         }
     }
+
+7. Tambahkan kode style.xml dibawah ini agar stausbarnya trasparant
+      <style name="AppTheme.NoActionbar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    
+    kemudian pada Androidmanifest di MainActivity tambahkan kode dibawah ini
+    
+    android:theme="@style/AppTheme.NoActionbar"
