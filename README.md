@@ -39,7 +39,7 @@ gambar 2
 ![Screen Shot 2019-09-11 at 01 08 55](https://user-images.githubusercontent.com/43386555/64639189-87e61680-d431-11e9-91bb-7e85d100368a.png)
 
 
-      4. Setelah di implement method onNavigationItemSelected selanjutnya tambahkan kode dibawah ini sesuai ID yang akan di panggil menggunakan swict case atau bisa menggunakan if else itu selera kalian
+4. Setelah di implement method onNavigationItemSelected selanjutnya tambahkan kode dibawah ini sesuai ID yang akan di panggil menggunakan swict case atau bisa menggunakan if else itu selera kalian
       
       /*
     method from implements NavigationView.OnNavigationItemSelectedListener
@@ -83,7 +83,7 @@ gambar 2
         }
         
        
-        5. Ok agar menu item nya ketika di klik dapat otomatis slide close 
+5. Ok agar menu item nya ketika di klik dapat otomatis slide close 
            tambahkan kode dibawah ini sebelum return true;
            
            //close nav drawer
