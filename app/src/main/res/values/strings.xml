@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+    <string name="my_image">my image</string>
+    <string name="redudant">Redudant</string>
+    <string name="includedev8_gmail_com">includedev8@gmail.com</string>
+    <string name="inbox">Inboz</string>
+    <string name="starred">Starred</string>
+    <string name="send_mail">Send Email</string>
+    <string name="drafts">Drafts</string>
+    <string name="subheader">Subheader</string>
+    <string name="all_main">All Main</string>
+    <string name="trash">Trash</string>
+    <string name="spam">Spam</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>
