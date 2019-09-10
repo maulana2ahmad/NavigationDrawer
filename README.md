@@ -88,3 +88,15 @@ gambar 2
            
            //close nav drawer
         drawerLayout.closeDrawer(GravityCompat.START);
+        
+        
+       6. Selanjutnya tambahkan method onBackPressed
+       
+       //fungsi method ini untuk ketika di klick back maka otomatis navigationview menutup navigation drawernya
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+            super.onBackPressed();
+        }
+    }
