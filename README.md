@@ -112,3 +112,44 @@ gambar 2
     kemudian pada Androidmanifest di MainActivity tambahkan kode dibawah ini
     
     android:theme="@style/AppTheme.NoActionbar"
+    
+    
+9. Peruabahan Design Toolbar dan navigation drawerlayout
+   seperti code dibawah ini
+   
+   <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fitsSystemWindows="false"
+        android:orientation="vertical"
+        tools:openDrawer="start">
+
+        <include layout="@layout/activity_main" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|left"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/navigation_header"
+            app:menu="@menu/navigation_menu" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>
+
+Result
+
+![1](https://user-images.githubusercontent.com/43386555/64643996-dc8e8f00-d43b-11e9-9d66-7828bffb33c5.jpg)
