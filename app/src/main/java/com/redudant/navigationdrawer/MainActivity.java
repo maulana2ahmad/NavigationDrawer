@@ -8,9 +8,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -56,12 +54,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id)
         {
             case R.id.inbox_id:
-                Toast.makeText(getApplicationContext(), "Inbox", Toast.LENGTH_LONG).show();
-
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment_container, new InboxFragment())
+                        .commit();
                 break;
 
             case R.id.starred_id:
-                Toast.makeText(getApplicationContext(), "Starred", Toast.LENGTH_LONG).show();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment_container, new StarredFragment())
+                        .commit();
                 break;
 
             case R.id.send_id:
